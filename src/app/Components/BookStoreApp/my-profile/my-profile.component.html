@@ -1,0 +1,87 @@
+<div class="MainBody">
+  <div class="RoutingPath">
+    <span class="HomeRouting">
+      Home/
+      <span class="ProfileText">
+        Profile
+      </span>
+    </span>
+  </div>
+  <div class="PersonDetail">
+    <div class="ProfileDetailsDiv">
+      <span class="PersonalDetailsText">
+        Personal Details
+      </span>
+      <button class="EditButton" (click)="OnEdit()">
+        <span class="EditText">
+          edit
+        </span>
+      </button>
+    </div>
+    <div class="USerDetailForm">
+      <span>
+        Full Name
+      </span>
+      <input type="text" class="InputForms" matInput placeholder="Full Name" [value]="UserFullName"
+        [disabled]="disabledForm">
+    </div>
+    <div class="USerDetailForm">
+      <span>
+        Email Id
+      </span>
+      <input type="text" class="InputForms" matInput placeholder="Email Id" [value]="EmailId" [disabled]="disabledForm">
+    </div>
+    <div class="USerDetailForm">
+      <span>
+        Password
+      </span>
+      <input type="password" class="InputForms" matInput placeholder="Full Name" [value]="Password"
+        [disabled]="disabledForm">
+    </div>
+    <div class="USerDetailForm">
+      <span>
+        Mobile Number
+      </span>
+      <input type="text" class="InputForms" matInput placeholder="Mobile Number" [value]="MobileNumber"
+        [disabled]="disabledForm">
+    </div>
+  </div>
+  <div class="AddressDetail">
+    <div class="AddressDetailDiv">
+      <span class="AddressDetailTExt">Address Details</span>
+      <button mat-button>Add new Address</button>
+    </div>
+    <div class="AddressTypeDiv">
+      <span class="AddressTypeHeader"> {{ DisplayAddress }}</span>
+      <button class="EditButton" (click)="OnEditForAddressForm()">
+        <span class="EditText">
+          Edit
+        </span>
+      </button>
+    </div>
+    <div class="AddressDiv">
+      <mat-label>Address</mat-label>
+      <textarea matInput [disabled]="disabledFormForAddress" class="AddressDetailForm"
+        placeholder="Ex. 100 Main St">{{Address}}</textarea>
+    </div>
+    <div class="CityOrStateDiv">
+      <div class="CityOrTownDiv">
+        <span class="AddressFormHeader">City/town</span>
+        <input [disabled]="disabledFormForAddress" type="text" class="AddressDetailForm" matInput [value]="CityOrTown">
+      </div>
+      <div class="StateDiv">
+        <span class="AddressFormHeader">State</span>
+        <input [disabled]="disabledFormForAddress" type="text" class="AddressDetailForm" matInput [value]="state">
+      </div>
+    </div>
+    <div class="TypeDiv">
+      <label id="example-radio-group-label">Type of Address</label>
+      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
+        [(ngModel)]="DisplayAddress">
+        @for (DisplayAddress of Addresstype; track DisplayAddress) {
+        <mat-radio-button class="example-radio-button" [value]="DisplayAddress">{{DisplayAddress}}</mat-radio-button>
+        }
+      </mat-radio-group>
+    </div>
+  </div>
+</div>

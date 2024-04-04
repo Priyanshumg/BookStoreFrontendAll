@@ -1,0 +1,265 @@
+.MainBody{
+  margin-left: 15vw;
+  margin-right: 20vw;
+  height: auto;
+}
+
+.PageRouting{
+  margin-top: 6vh;
+}
+
+.MyCartTemplate{
+  border: 1px solid rgb(209, 208, 208);
+}
+
+.MyCartTextWithLocation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-content: center;
+  align-items: center;
+  margin-left: 3vw;
+  margin-right: 2vw;
+  margin-top: 3vh;
+}
+
+.LocationBar{
+  border: 1px solid rgb(189, 187, 187);
+  border-radius: 5px;
+  padding-left: 15px;
+  width: 250px;
+  height: 40px;
+  display: flex;
+  vertical-align: middle;
+}
+
+.LocationPinImage{
+  width: 30px;
+}
+
+.LoactionText{
+  padding-top: 10px;
+  font-size: 15px;
+  margin-left: 15x;
+  cursor: pointer;
+}
+
+.displayQuantity{
+  height: 20px;
+  padding-left: 14px;
+  width: 20px;
+}
+.displayQuantity::placeholder{
+  padding-left: 5px;
+}
+
+.POSNEGButton{
+  margin-top: 20px;
+  border: 1px solid rgb(199, 199, 199);
+  background-color: white;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer ;
+}
+
+.MyCartTexInsideMyCart{
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.BookDetails{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  height: 20vh;
+}
+
+.BookImageDiv{
+  width: fit-content;
+}
+
+.HomeText{
+  cursor: pointer;
+  color: grey;
+}
+
+.MyCartText{
+  cursor: context-menu;
+  color: black;
+  font-size: 10px;
+}
+
+.BookImage{
+  width: 100px;
+  margin-left: 15px;
+}
+
+.BookTextDetailsDiv{
+  margin-left: 2vw;
+}
+
+.BookAuthor{
+  margin-top: 2vh;
+}
+
+.BookPrice{
+  margin-top: 3vh;
+}
+
+
+.PlaceOrderButtonDiv{
+  display: flex;
+  justify-content: end;
+  margin-right: 3vw;
+  margin-bottom: 3vh;
+}
+
+.RemoveAllButton{
+  margin-left: 20px;
+  background-color: white;
+  border-color: white;
+  border-width: 0px;
+  cursor: pointer
+}
+.TitleText{
+  font-weight: 600;
+  color: rgb(70, 70, 70);
+}
+
+.AuthorName{
+  font-size: 2px;
+  color: rgb(70, 70, 70);
+}
+
+.DiscountedPrice{
+  text-decoration-line: line-through;
+  color: rgb(189, 187, 187)
+}
+
+.PlaceOrderButton{
+  background-color: #3371B5;
+  color: white;
+  width: 160px;
+}
+
+.PlaceOrder{
+  color: white;
+}
+
+.AddressDetailsForms{
+  margin-top: 20px;
+  border: 1px solid rgb(199, 199, 199);
+  margin-bottom: 20px;
+}
+
+.AddNewAddress{
+  color: #A03037;
+}
+
+.AddAddressButton{
+  width: 190px;
+  border: 1px solid #A03037;
+  color: #A03037;
+}
+
+.CustomerDetailwithAddressDiv{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.InputText{
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.CustomerDetailsText{
+  font-size: 20px;
+}
+
+.FullnameMobileDiv{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.FullNameDiv,
+.MobileNumberDiv,
+.AddressDiv{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.FullNameDiv{
+ margin-left: 50px;
+}
+
+.MobileNumberDiv{
+  margin-right: 50px;
+}
+
+.inputArea{
+  height: 50px;
+}
+
+.AddressDiv{
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.TypeText{
+  margin-left: 50px;
+}
+
+.RadioButton{
+  display: flex;
+  justify-content: center;
+}
+.group{
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0vh 10%;
+  justify-content: space-between;
+}
+
+.ContinueDiv{
+  display: flex;
+  justify-content: end;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ContinueButton{
+  background-color: #3371B5;
+  width: 150px;
+}
+
+.ContinueButtonText{
+  color: white;
+}
+
+.OrderSummary{
+  border: 1px solid rgb(199, 199, 199);
+}
+
+.CheckoutButtonDiv{
+  margin-top: 40px;
+}
+
+

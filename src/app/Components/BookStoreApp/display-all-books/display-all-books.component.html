@@ -1,0 +1,42 @@
+<div class="windowscreen">
+  <div class="header">
+      <div class="leftdetails">
+          <span class="book-cnt">Books</span>
+          <span class="bookcount">( {{bookArray.length}} items) </span>
+      </div>
+      <!-- <button mat-button [matMenuTriggerFor]="menu" id>
+          Sort by relevance
+          <span class="material-symbols-outlined" id="down-arrow">
+              expand_more
+          </span>
+      </button>
+      <mat-menu #menu="matMenu">
+    <button mat-menu-item>Price: Low to High</button>
+    <button mat-menu-item>Price: High to Low</button>
+    <button mat-menu-item>Newest Arrival</button>
+  </mat-menu> -->
+
+  <mat-accordion>
+  <mat-expansion-panel class="bottom-expanded">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Sort by relevance
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p class="pricebtn"(click)="pricelowtoHigh()">Price: Low to High</p>
+      <p class="pricebtn" (click)="pricehightolow()">"Price: High to Low</p>
+      <p class="pricebtn" (click)="newestArrival()">Newest Arrival</p>
+  </mat-expansion-panel>
+  </mat-accordion>
+  </div>
+  <div class="displaybooks">
+      <app-displaybooktemplate class="singlebook" [bookList]="bookArray"></app-displaybooktemplate>
+  </div>
+  <div class="paginator">
+      <mat-paginator [length]="bookArray.length"
+                [pageSize]="10"
+                [pageSizeOptions]="[5, 10, 25, 100]"
+                aria-label="Select page">
+  </mat-paginator>
+  </div>
+  </div>

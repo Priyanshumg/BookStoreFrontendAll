@@ -1,0 +1,26 @@
+<div class="oustide">
+  <div class="container" *ngFor ="let books of bookList"  (click)="singlebook(books.bookId)">
+      <div class="bookimg">
+          <img src="assets\img\firstbookimg.png" alt="">
+      </div>
+      <div class="bookdata">
+          <div class="booknamedetails">
+             <p class="bookname-cnt">{{books.bookName}}</p>
+             <span class="author-cnt">{{books.author}}</span>
+          </div>
+          <div class="ratings">
+              <div class="numberrating">
+                  4.5
+              <mat-icon id="star-cnt">star</mat-icon>
+              </div>
+              <div class="numberofrating">
+                  (20)
+              </div>
+          </div>
+          <div class="price">
+              <span class="discount-price-cnt"> Rs.{{books.discountPrice}}</span>
+              <span class="actual-price-cnt"> Rs.{{books.price}}</span>
+          </div>
+      </div>
+  </div>
+  </div>

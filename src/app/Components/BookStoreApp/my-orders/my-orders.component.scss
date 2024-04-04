@@ -1,0 +1,113 @@
+.MainBody {
+  margin-left: 15vw;
+  margin-right: 20vw;
+  height: auto;
+}
+
+.PageRouting {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+// .MyOrdersTemplate {
+//   // border: 1px solid rgb(209, 208, 208);
+// }
+
+.BookDetails {
+  display: flex;
+  padding-top: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  padding-bottom: 5vh;
+  border: 1px solid rgb(231, 230, 230);
+  margin-bottom: 20px;
+}
+
+.BookImageDiv {
+  width: fit-content;
+}
+
+.HomeText {
+  cursor: pointer;
+  color: grey;
+}
+
+.MyOrdersText {
+  cursor: context-menu;
+  color: black;
+  font-size: 10px;
+}
+
+.MyOrdersTextDiv{
+  background-color: rgb(237, 237, 237);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.BookImage {
+  width: 100px;
+  margin-left: 15px;
+}
+
+.BookTextDetailsDiv {
+  margin-left: 2vw;
+}
+
+.BookAuthor {
+  margin-top: 2vh;
+}
+
+.BookPrice {
+  margin-top: 3vh;
+}
+
+.RemoveAllButton {
+  margin-left: 20px;
+  background-color: white;
+  border-color: white;
+  border-width: 0px;
+  cursor: pointer;
+}
+
+.TitleText {
+  font-weight: 600;
+  color: rgb(70, 70, 70);
+}
+
+.AuthorName {
+  font-size: 2px; /* This seems suspiciously small, you might want to adjust it */
+  color: rgb(70, 70, 70);
+}
+
+.DiscountedPrice {
+  text-decoration-line: line-through;
+  color: rgb(189, 187, 187);
+}
+
+.BookTextDetailsDiv{
+  width: 100vw;
+}
+
+.BookTitle{
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.DeleteButton{
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+.GreenDotImage{
+  width: 18px;
+  height: 18px;
+}
+
+.OrderPlacedDiv{
+  display: flex;
+  vertical-align: middle;
+}

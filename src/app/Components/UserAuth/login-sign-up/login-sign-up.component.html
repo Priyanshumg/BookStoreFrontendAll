@@ -1,0 +1,78 @@
+<div class="MainBody">
+  <div class="LoginLayout">
+    <div class="LeftHandSideLayout">
+      <div class="ShoppingLogo">
+        <img src="../../../../assets/Images/UserAuth/OnlineShopping.png" class="OnlineShoppingImage">
+      </div>
+      <div class="ShoppingLogoText">
+        <label for="OnlineShoppingImage" class="OnlineShoppingText">Online Booking Shop</label>
+      </div>
+    </div>
+    <div class="RightHandSideLayout">
+      <form>
+        <mat-tab-group>
+          <mat-tab label="LOGIN">
+            <div class="EmailInputDiv">
+              <label for="email">Email</label>
+              <input type="email" name = "email" [(ngModel)] = "LoginObj.email" placeholder="email" class="EmailInput">
+            </div>
+            <div class="EmailInputDiv">
+              <label for="password">password</label>
+              <input type="password" name="password" placeholder="password" [(ngModel)] = "LoginObj.password" class="EmailInput">
+            </div>
+            <div class="ForgetPassword">
+              <a href="#" class="ForgetPasswordText">
+                Forget Password?
+              </a>
+            </div>
+            <div class="Button">
+              <button mat-button class="LoginButton" (click)="onSubmit()">
+                <span class="submitText">
+                  Login
+                </span>
+              </button>
+            </div>
+            <div class="OrElement">
+              <img src="../../../../assets/Images/UserAuth/OR.png" alt="">
+            </div>
+            <div class="FacebookOrGoogle">
+              <button mat-button class="FaceBook" id="facebook">
+                <span class="FaceBookButtonText">
+                  FaceBook
+                </span>
+              </button>
+              <button mat-button class="Google" id="google">Google</button>
+            </div>
+          </mat-tab>
+          <mat-tab label="SIGNUP">
+            <form action="">
+              <div class="EmailInputDiv">
+                <label for="FullName">Full Name</label>
+                <input type="text" placeholder="Email" name = "fullName" [(ngModel)] = "RegisterObj.fullName" class="EmailInput">
+              </div>
+              <div class="EmailInputDiv">
+                <label for="Email">Email Id</label>
+                <input type="text" placeholder="Email" class="EmailInput" [(ngModel)] = "RegisterObj.email" name="email">
+              </div>
+              <div class="EmailInputDiv">
+                <label for="password">password</label>
+                <input type="password" placeholder="password" class="EmailInput" [(ngModel)] = "RegisterObj.password" name="password">
+              </div>
+              <div class="EmailInputDiv">
+                <label for="password">Mobile Number</label>
+                <input type="text" placeholder="Number" [(ngModel)] = "RegisterObj.phoneNumber" name="number" class="EmailInput">
+              </div>
+              <div class="SubmitButtonDiv">
+                <button mat-button class="SubmitButton" (click)="onSignUp()">
+                  <span class="Submit">
+                    SignUp
+                  </span>
+                </button>
+              </div>
+            </form>
+          </mat-tab>
+        </mat-tab-group>
+      </form>
+    </div>
+  </div>
+</div>

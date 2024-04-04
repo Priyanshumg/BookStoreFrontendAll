@@ -1,0 +1,36 @@
+.windowscreen{
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  // align-items: center;
+  flex-direction: column;
+}
+.header{
+  margin-top: 2vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 80vw;
+  height: 8vh;
+}
+.book-cnt{
+ font-size: 25px;
+}
+.bookcount{
+  margin-left: 8px;
+  font-size: 12px;
+  color: #9D9D9D;
+}
+.bottom-expanded .mat-expansion-panel-content {
+  transform: translateY(0%);
+}
+
+.displaybooks{
+  display: flex;
+ // border :solid black;
+}
+.pricebtn{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

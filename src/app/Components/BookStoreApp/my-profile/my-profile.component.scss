@@ -1,0 +1,139 @@
+.MainBody{
+  // background-color: red;
+  margin-left: 15vw;
+  margin-right: 80vh;
+  height: 100%;
+}
+
+.USerDetailForm{
+  // background-color: aqua;
+  display: flex;
+  flex-direction: column;
+}
+
+.HomeRouting{
+  color: grey;
+  cursor: pointer;
+}
+
+.ProfileText{
+  color: black;
+  cursor:context-menu;
+}
+
+.RoutingPath{
+  margin-top: 20px;
+  padding-top: 20px;
+  // padding-left: 40px;
+  padding-right: 40px;
+}
+
+.PersonDetail{
+  padding-left: 40px;
+  padding-right: 40px;
+  // background-color: red;
+  padding-bottom: 40px;
+  // border: 1px solid rgba(201, 200, 200, 0.563);
+}
+
+.ProfileDetailsDiv
+{
+  padding-top: 20px;
+  // background-color: blue;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  justify-content: baseline;
+}
+
+.PersonalDetailsText{
+  font-size: large;
+}
+
+.EditText{
+  color: brown;
+  margin-left: 20px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.USerDetailForm{
+  margin-top: 20px;
+}
+
+.InputForms{
+  height: 40px;
+}
+
+
+.EditButton{
+  background-color: white;
+  border: none;
+}
+
+.AddressDetail{
+  // background-color: aqua;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.AddressTypeHeader{
+  // background-color: red;
+  font-size: large;
+}
+
+.AddressDetailTExt{
+  font-size: large;
+  font-weight: bold;
+}
+
+.AddressDetailDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AddressDiv,
+.CityOrStateDiv,
+.CityOrTownDiv,
+.StateDiv,
+.TypeDiv
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.AddressDetailForm{
+  height: 40px;
+  width: 550px;
+  max-height: 40px;
+  max-width: 550px;
+}
+
+.AddressFormHeader,.AddressDiv{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.LocationBar{
+  border: 1px solid rgb(189, 187, 187);
+  border-radius: 5px;
+  padding-left: 15px;
+  width: 250px;
+  height: 40px;
+  display: flex;
+  vertical-align: middle;
+}
+
+.LocationPinImage{
+  width: 30px;
+}
+
+.LoactionText{
+  padding-top: 10px;
+  font-size: 15px;
+  margin-left: 15x;
+  cursor: pointer;
+}

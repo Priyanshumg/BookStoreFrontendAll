@@ -1,0 +1,36 @@
+.OrderPlaced{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.SuccessMessage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.OrderDetailTableDiv{
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+}
+
+.ContinueShoppingButton{
+  margin-top: 40px;
+}
+
+.ContinueShoppingButton{
+  background-color: #3371B5;
+}
+
+.OrderPlacedSuccessfullyText{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.CountinueShoppingbuttonText{
+  color: white;
+}

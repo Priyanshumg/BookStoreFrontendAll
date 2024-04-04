@@ -1,0 +1,171 @@
+<div class="MainBody">
+  <div class="PageRouting">
+    <span class="HomeText" (click)="NavigateToHome()">
+      Home/
+      <span class="MyCartText">
+        My Cart
+      </span>
+    </span>
+  </div>
+  <div class="MyCartTemplate">
+    <div class="MyCartTextWithLocation">
+      <span class="MyCartTexInsideMyCart">
+        My Cart ({{TotalBooksincart}})
+      </span>
+      <div class="LocationBar">
+        <img class="LocationPinImage" src="../../../../assets/Icons/MycartIcons/pin_drop_black_24dp.svg" alt="">
+        <span class="LoactionText">
+          Use current location
+        </span>
+      </div>
+    </div>
+    <div class="BookDetails">
+      <div class="BookImageDiv">
+        <img src="../../../../assets/Images/BookStoreApp/Image 11.png" class="BookImage">
+      </div>
+      <div class="BookTextDetailsDiv">
+        <div class="BookTitle">
+          <span class="TitleText"> {{ Title }} </span>
+        </div>
+        <div class="BookAuthor">
+          <span class="AuthorName"> {{ Author }} </span>
+        </div>
+        <div class="BookPrice">
+          <span> Rs.{{ Price }} </span>
+          <span class="DiscountedPrice"> Rs.{{ DiscountedPrice }} </span>
+        </div>
+        <div class="QuantityDiv">
+          <button (click)="Minus()" class="POSNEGButton">-</button>
+          <input class="displayQuantity" type="text" [value]="Quantity">
+          <button (click)="plus()" class="POSNEGButton">+</button>
+          <button class="RemoveAllButton" (click)="RemoveAll()">Remove</button>
+        </div>
+      </div>
+    </div>
+    <div class="BookDetails">
+      <div class="BookImageDiv">
+        <img src="../../../../assets/Images/BookStoreApp/Image 11.png" class="BookImage">
+      </div>
+      <div class="BookTextDetailsDiv" id="AddAddressForm">
+        <div class="BookTitle">
+          <span class="TitleText"> {{ Title }} </span>
+        </div>
+        <div class="BookAuthor">
+          <span class="AuthorName"> {{ Author }} </span>
+        </div>
+        <div class="BookPrice">
+          <span> Rs.{{ Price }} </span>
+          <span class="DiscountedPrice"> Rs.{{ DiscountedPrice }} </span>
+        </div>
+        <div class="QuantityDiv">
+          <button (click)="Minus()" class="POSNEGButton">-</button>
+          <input class="displayQuantity" type="text" [value]="Quantity">
+          <button (click)="plus()" class="POSNEGButton">+</button>
+          <button class="RemoveAllButton" (click)="RemoveAll()">Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="PlaceOrderButtonDiv">
+      <button mat-button class="PlaceOrderButton" (click)="CustomerDetailsToToggle()"><span class="PlaceOrder">PLACE ORDER</span></button>
+    </div>
+  </div>
+  <div class="AddressDetailsForms" id="AddressDetailDiv"[style.display]="showaddress?'block':'none'">
+    <div class="CustomerDetailwithAddressDiv">
+      <span class="CustomerDetailsText">
+        Customer Details
+      </span>
+      <button class="AddAddressButton" mat-button>
+        <span class="AddNewAddress">
+          Add new Address
+        </span>
+      </button>
+    </div>
+    <div class="FullnameMobileDiv">
+      <div class="FullNameDiv">
+        <span class="InputText">
+          Full Name
+        </span>
+        <input mat-button type="text" placeholder="FullName" class="inputArea">
+      </div>
+      <div class="MobileNumberDiv">
+        <span class="InputText">
+          Mobile Number
+        </span>
+        <input mat-button type="text" placeholder="Mobile Number" class="inputArea">
+      </div>
+    </div>
+    <div class="AddressDiv">
+      <span class="InputText">
+        Address
+      </span>
+      <input type="text" placeholder="Address" class="inputArea">
+    </div>
+    <div class="">
+      <div class="FullnameMobileDiv">
+        <div class="FullNameDiv">
+          <span class="InputText">
+            city/town
+          </span>
+          <input mat-button type="text" placeholder="CityTown" class="inputArea">
+        </div>
+        <div class="MobileNumberDiv">
+          <span class="InputText">
+            State
+          </span>
+          <input mat-button type="text" placeholder="State" class="inputArea">
+        </div>
+      </div>
+    </div>
+    <div class="TypeOfAddressDiv">
+      <div class="TypeText">
+        <span class="InputText">
+          Type
+        </span>
+      </div>
+      <div class="RadioButton">
+        <mat-radio-group aria-label="Select an option" class="group">
+          <mat-radio-button value="1">home</mat-radio-button>
+          <mat-radio-button value="2">work</mat-radio-button>
+          <mat-radio-button value="3">other</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </div>
+    <div class="ContinueDiv">
+      <button mat-button class="ContinueButton" (click)="ContinueToPlaceOrderToTrue">
+        <span class="ContinueButtonText" (click)="ContinueToPlaceOrderToTrue()">
+          Continue
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="OrderSummary" [style.display]="showOrderSummary?'block':'none'">
+    <div class="MyCartTemplate">
+      <div class="MyCartTextWithLocation">
+        <span class="MyCartTexInsideMyCart">
+          Order Summary
+        </span>
+      </div>
+      <div class="BookDetails">
+        <div class="BookImageDiv">
+          <img src="../../../../assets/Images/BookStoreApp/Image 11.png" class="BookImage">
+        </div>
+        <div class="BookTextDetailsDiv">
+          <div class="BookTitle">
+            <span class="TitleText"> {{ Title }} </span>
+          </div>
+          <div class="BookAuthor">
+            <span class="AuthorName"> {{ Author }} </span>
+          </div>
+          <div class="BookPrice">
+            <span> Rs.{{ Price }} </span>
+            <span class="DiscountedPrice"> Rs.{{ DiscountedPrice }} </span>
+          </div>
+        </div>
+      </div>
+      <div class="PlaceOrderButtonDiv">
+        <button mat-button class="PlaceOrderButton" (click)="redirectTo()"><span class="PlaceOrder">CHECKOUT</span></button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+<mat-toolbar>
+  <div class="LeftHandSideElementToolBar">
+    <div class="LogoSpaceDiv">
+      <div class="BookStoreLogoDiv">
+        <img class="BookStoreLogoImage" src="../../../../../assets/Images/BookStoreApp/education.png">
+      </div>
+      <div class="BookStoreTextDiv">
+        <span class="BookStoreText">
+          Bookstore
+        </span>
+      </div>
+    </div>
+    <div class="SearchBarDiv">
+      <div class="SearchBarIcon">
+        <img class="SearchIcon" src="../../../../../assets/Icons/NavigationIcons/search_FILL0_wght400_GRAD0_opsz24.png">
+      </div>
+      <form action="">
+        <div class="SearchBarInput">
+          <input type="text" placeholder="Search" class="Search">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="RightHandSideElementToolBar">
+    <div class="ProfileOptions">
+      <button mat-button [matMenuTriggerFor]="menu" class="ProfileMenu">
+        <div class="ProfileImage">
+          <img src="../../../../../assets/Icons/NavigationIcons/icons8-user-24 (1).png">
+        </div>
+        <div class="ProfileTextDiv">
+          <span class="ProfileOptionText">
+            {{ User }}
+          </span>
+        </div>
+      </button>
+      <mat-menu #menu="matMenu">
+        <span class="GreetMessage">
+          Hello {{ User }},
+        </span>
+        <div class="Profile">
+          <button mat-menu-item>
+            <img src="../../../../../assets/Icons/NavigationIcons/person_FILL0_wght400_GRAD0_opsz24.svg">
+            <span>
+              Profile
+              <span class="NoneDisplayableContent">
+                NoneDisplayableContent
+              </span>
+            </span>
+          </button>
+        </div>
+        <button mat-menu-item>
+          <img src="../../../../../assets/Icons/NavigationIcons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg" class="MyCartMenuElement">
+          <span class="MyOrdersText">
+            My Orders
+          </span>
+        </button>
+        <button mat-menu-item>
+          <img src="../../../../../assets/Icons/NavigationIcons/favorite_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          <span>
+            My Wishlist
+          </span>
+        </button>
+      </mat-menu>
+    </div>
+    <div class="MyCart">
+      <button mat-button>
+        <div class="CartOption">
+          <img class="CartImgae" src="../../../../../assets/Icons/NavigationIcons/icons8-cart-24.png" alt="">
+          <span class="MycartText">
+            My Cart
+          </span>
+        </div>
+      </button>
+    </div>
+  </div>
+</mat-toolbar>

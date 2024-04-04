@@ -1,0 +1,55 @@
+<app-top-navigation></app-top-navigation>
+<div class="MainBody">
+  <div class="PageRouting">
+    <span class="HomeText">
+      Home /
+      <span class="MyOrdersText">
+        My Orders
+      </span>
+    </span>
+  </div>
+  <div class="MyOrdersTemplate">
+    <div class="BookDetails">
+      <div class="BookImageDiv">
+        <img src="../../../../assets/Images/BookStoreApp/Image 11.png" class="BookImage">
+      </div>
+      <div class="BookTextDetailsDiv">
+        <div class="BookTitle">
+          <span class="TitleText"> {{ BookTitle }} </span>
+          <div class="OrderPlacedDiv">
+            <img src="../../../../assets/Icons/MyOrdersIcons/icons8-dot-30.png" class="GreenDotImage">
+            <span>Order Placed At {{ CreatedAt }}</span>
+          </div>
+        </div>
+        <div class="BookAuthor">
+          <span class="AuthorName"> {{ AuthorName }} </span>
+        </div>
+        <div class="BookPrice">
+          <span> Rs.{{ Price }} </span>
+          <span class="DiscountedPrice"> Rs.{{ DiscountedPrice }} </span>
+        </div>
+      </div>
+    </div>
+    <div class="BookDetails">
+      <div class="BookImageDiv">
+        <img src="../../../../assets/Images/BookStoreApp/Image 11.png" class="BookImage">
+      </div>
+      <div class="BookTextDetailsDiv">
+        <div class="BookTitle">
+          <span class="TitleText"> {{ BookTitle }} </span>
+          <div class="OrderPlacedDiv">
+            <img src="../../../../assets/Icons/MyOrdersIcons/icons8-dot-30.png" class="GreenDotImage">
+            <span>Order Placed At {{ CreatedAt }}</span>
+          </div>
+        </div>
+        <div class="BookAuthor">
+          <span class="AuthorName"> {{ AuthorName }} </span>
+        </div>
+        <div class="BookPrice">
+          <span> Rs.{{ Price }} </span>
+          <span class="DiscountedPrice"> Rs.{{ DiscountedPrice }} </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

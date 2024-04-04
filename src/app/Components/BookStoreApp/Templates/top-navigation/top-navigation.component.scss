@@ -1,0 +1,161 @@
+.mat-toolbar {
+  background-color: #A03037;
+}
+
+.LeftHandSideElementToolBar,
+.RightHandSideElementToolBar {
+  display: flex;
+  flex-direction: row;
+}
+
+.LeftHandSideElementToolBar {
+  flex: 1;
+  margin-left: 160px;
+}
+
+.BookStoreLogoDiv {
+  margin-top: 3px;
+}
+
+.LogoSpaceDiv {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 5px;
+}
+
+.BookStoreText {
+  color: white;
+}
+
+.SearchBarDiv {
+  margin-left: 40px;
+  background-color: white;
+  border-radius: 2px;
+  display: flex; /* Added */
+  align-items: center; /* Align items vertically */
+}
+
+.Search {
+  width: 490px;
+  height: 33px;
+  border: none; /* Shortened border property */
+  padding-left: 10px;
+}
+
+.Search::placeholder {
+  padding-left: 5px;
+}
+
+.Search:focus {
+  outline: none;
+}
+
+.SearchIcon {
+  cursor: pointer;
+  padding-top: 8px;
+  padding-left: 10px;
+}
+
+.RightHandSideElementToolBar {
+  flex: 0.5;
+  gap: 10px;
+  align-items: center;
+  gap: 0px;
+}
+
+.ProfileOptions{
+  display: flex;
+  flex: 0.2;
+  border: 1px solid #8F2B2F;
+  height: 61px;
+  align-items: center;
+  vertical-align: bottom;
+  align-items: end;
+}
+
+.MycartText {
+  color: white;
+  font-weight: 300;
+  display: flex;
+  align-items: flex-end; /* Align text at the bottom */
+  width: 60px;
+}
+
+.NoneDisplayableContent {
+  color: white;
+  font-size: 12px; /* Corrected font size */
+}
+
+.ButtonsMatMenu {
+  justify-content: center;
+  align-items: center; /* Align items vertically */
+}
+
+.ProfileTextDiv:hover{
+  background-color: transparent;
+}
+.ProfileTextDiv:active{
+  background-color: transparent;
+}
+
+.GreetMessage {
+  padding-left: 20px;
+}
+
+.MyOrdersText{
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.MyCartMenuElement{
+  width: 22px;
+}
+
+::ng-deep {
+  .mat-menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.ProfileMenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.ProfileOptionText {
+  color: white;
+  font-weight: 300;
+}
+
+.ProfileImage {
+  width: fit-content;
+  height: 20px;
+  margin-left: 25px;
+}
+
+.Profile {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.CartOption {
+  display: flex;
+  flex-direction: column;
+  vertical-align: bottom;
+  align-items: center;
+  width: fit-content;
+  margin-top: 20px;
+  border: 1px solid #8F2B2F;
+}
+
+.CartImgae {
+  width: 20px;
+}
+
+.MyCart {
+  display: flex;
+  flex-direction: column;
+  vertical-align: bottom;
+}

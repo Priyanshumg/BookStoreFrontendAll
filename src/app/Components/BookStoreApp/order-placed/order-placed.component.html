@@ -1,0 +1,61 @@
+<!-- <app-top-navigation></app-top-navigation> -->
+<div class="MainBodyDiv">
+  <div class="OrderPlaced">
+    <div class="OrderPlacedDecorationDiv">
+      <img src="../../../../assets/Images/BookStoreApp/OrderPlacedImg1.png" class="OrderPlacedImg1">
+    </div>
+    <div>
+      <p class="OrderPlacedSuccessfullyText">
+        Order Placed Successfully
+      </p>
+    </div>
+    <div class="OrderPlacedDecorationDiv2">
+      <img src="../../../../assets/Images/BookStoreApp/OrderPlacedImg2.png" alt="">
+    </div>
+    <div class="OrderPlacedDescriptionDiv">
+      <div class="SuccessMessage">
+        <p>
+          hurray!!! your order is confirmed
+        </p>
+        <p>
+          the Order Id is {{ OrderID }}, save the Order Id for
+        </p>
+        <p>
+          further communication..
+        </p>
+      </div>
+    </div>
+    <div class="OrderDetailTableDiv">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <!-- EmailUs Column -->
+        <ng-container matColumnDef="EmailUs">
+          <th mat-header-cell *matHeaderCellDef> Email Us </th>
+          <td mat-cell *matCellDef="let element"> {{element.EmailUs}} </td>
+        </ng-container>
+
+        <!-- ContactUs Column -->
+        <ng-container matColumnDef="ContactUs">
+          <th mat-header-cell *matHeaderCellDef> Contact Us </th>
+          <td mat-cell *matCellDef="let element"> {{element.ContactUs}} </td>
+        </ng-container>
+
+        <!-- Address Column -->
+        <ng-container matColumnDef="Address">
+          <th mat-header-cell *matHeaderCellDef> Address </th>
+          <td mat-cell *matCellDef="let element"> {{element.Address}} </td>
+        </ng-container>
+
+        <!-- Define columns to display -->
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let element; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+    <div class="CountinueShoppingButtonDiv">
+      <button mat-button class="ContinueShoppingButton">
+        <span class="CountinueShoppingbuttonText">
+          Continue Shopping
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
